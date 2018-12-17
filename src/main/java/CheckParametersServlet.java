@@ -4,27 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Enumeration;
-
-/**
- * @author Xavi Torrens
- */
-public class CheckParametersServlet extends HttpServlet {
-
-
-    // Method to handle GET method request.
-    public void doGet(HttpServletRequest request,
-                      HttpServletResponse response)
-            throws ServletException, IOException
-    {
-        // Set response content type
-        response.setContentType("text/html");
-
-        PrintWriter out = response.getWriter();
-        String title = "Reading All Form Parameters";
-        String docType =
-                "<!doctype html public \"-//w3c//dtd html 4.0 " +
-                        "transitional//en\">\n";
+imp
         out.println(docType +
                 "<html>\n" +
                 "<head><title>" + title + "</title></head>\n" +
