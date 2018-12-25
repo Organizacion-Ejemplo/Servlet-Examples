@@ -12,26 +12,7 @@ import java.util.Enumeration;
 public class CheckParametersServlet extends HttpServlet {
 
 
-    // Method to handle GET method request.
-    public void doGet(HttpServletRequest request,
-                      HttpServletResponse response)
-            throws ServletException, IOException
-    {
-        // Set response content type
-        response.setContentType("text/html");
-
-        PrintWriter out = response.getWriter();
-        String title = "Reading All Form Parameters";
-        String docType =
-                "<!doctype html public \"-//w3c//dtd html 4.0 " +
-                        "transitional//en\">\n";
-        out.println(docType +
-                "<html>\n" +
-                "<head><title>" + title + "</title></head>\n" +
-                "<body bgcolor=\"#f0f0f0\">\n" +
-                "<h1 align=\"center\">" + title + "</h1>\n" +
-                "<table width=\"100%\" border=\"1\" align=\"center\">\n" +
-                "<tr bgcolor=\"#949494\">\n" +
+    // Me
                 "<th>Param Name</th><th>Param Value(s)</th>\n"+
                 "</tr>\n");
 
